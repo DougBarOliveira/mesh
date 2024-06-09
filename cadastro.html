@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Mesh.ico" type="image/x-icon">
+    <link id="folha01" rel="stylesheet" href="cadastroc.css">
+    <link id="folha02" rel="stylesheet" href="cadastroe.css" disabled>
+    <title>Login</title>
+</head>
+<body>
+    <div class="main_login">
+        <div class="right_login">
+            <div class="card_login">
+                <h1>CADASTRO</h1>
+                <form id="form" class="form">
+                <div class="textfield">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" name="nome" placeholder="Digite o seu nome" id="nome">
+                    <a>Mensagem</a>
+                </div>
+                <div class="textfield">
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" name="e-mail" placeholder="Digite o seu e-mail" id="email">
+                    <a>Mensagem</a>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" placeholder="Digite a sua senha" id="senha">
+                    <a>Mensagem</a>
+                </div>
+                <div class="textfield">
+                    <label for="senhaconf">Confirme a senha:</label>
+                    <input type="password" name="confsenha" placeholder="Digite a sua senha novamente" id="confsenha">
+                    <a>Mensagem</a>
+                </div>
+                <button type="submit" class="btn_login">Cadastrar</button>
+                <a href="index.html">Já tem uma conta</a>
+                </form>
+            </div>
+        </div>
+        <div class="left_login">
+            <h1>Cadastre-se<br>para fazer parte da melhor rede social corporativa</h1>
+            <img src="Mesh.png" alt="trabalho">
+            <button onclick="alternarEstilo()">☀/☾</button>
+        </div>
+    </div>
+    <script src="cadastro.js"></script>
+</body>
+</html>

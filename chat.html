@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Mesh</title>
+  <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="contacts">
+      <h2>Contatos</h2>
+      <ul id="contactList">
+        <li onclick="selectContact(this)">Lucas</li>
+        <li onclick="selectContact(this)">Pablito</li>
+        <!-- Adicione mais contatos aqui se necessário -->
+      </ul>
+    </div>
+    <div class="chat" id="chat">
+      <h1>Selecione um contato para começar a conversar.</h1>
+    </div>
+    <div class="area">
+    <input type="text" id="messageInput" placeholder="Digite sua mensagem..." disabled>
+    <button onclick="sendMessage()" disabled>Enviar</button>
+    </div> 
+  </div>
+  <script src="chat.js"></script>
+</body>
+</html>

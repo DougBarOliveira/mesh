@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="homi.jpeg" alt="Profile Picture">
+            <div class="cont">
+                <h1>Pablito Junior</h1><button id="connectButton">Conectar</button>
+            </div>
+            <h2>Garoto de programa | SocialMesh</h2>
+        </div>
+        <div class="profile-content">
+            <h3>Sobre</h3>
+            <p>Com uma paixão enraizada pela inovação tecnológica e soluções de software de ponta, sou um desenvolvedor de software dedicado na SocialMesh. Com uma sólida formação em Engenharia de Software e anos de experiência prática, estou comprometido em impulsionar a excelência técnica e a entrega de produtos de alta qualidade.</p>
+            <h3>Informações</h3>
+            <ul>
+                <li>
+                    <h4>Formação</h4>
+                    <p>Software Engineering - Harvard University</p>
+                </li>
+                <li>
+                    <h4>Habilidades</h4>
+                    <p>Linguagens de Programação: Java, JavaScript, Python<BR>
+                        Frameworks: Spring Boot, React.js, Django<BR>
+                        Bancos de Dados: MySQL, MongoDB<BR>
+                        Metodologias Ágeis: Scrum, Kanban<BR>
+                        Desenvolvimento de APIs RESTful<BR>
+                        Controle de Versão: Git</p>
+                </li>
+                <li>
+                    <h4>Interesses</h4>
+                    <p>Explorar novas tecnologias e frameworks<BR>
+                        Contribuir para projetos de código aberto<BR>
+                        Participar de hackathons e eventos de desenvolvimento<BR>
+                        Aprender sobre inteligência artificial e aprendizado de máquina<BR>
+                        Mentorar outros desenvolvedores em sua jornada profissional</p>
+                </li>
+                <li>
+                    <h4>Endereço</h4>
+                    <p>Rio do Pires BA</p>
+                </li>
+            </ul>
+            <h3>Postagens</h3>
+            <p>Pablito nunca postou nada</p>
+        </div>
+    </div>
+
+    <script>
+
+document.getElementById('connectButton').addEventListener('click', function() {
+    if (this.textContent === 'Conectar') {
+        this.textContent = 'Conectado';
+        document.getElementById('connectButton').style.backgroundColor="red"
+    } else {
+        this.textContent = 'Conectar';
+        document.getElementById('connectButton').style.backgroundColor="#268ae7"
+    }
+});
+
+    </script>
+</body>
+</html>

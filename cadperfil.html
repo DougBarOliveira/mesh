@@ -1,0 +1,156 @@
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESH-Editar Perfil</title>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" "=""></script>
+    <link rel="stylesheet" href="cadperfil.css">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  
+    
+    <div class="intro"><h1>Complete seu cadastro</h1></div>
+
+
+
+ <div class="container">
+    <form id="form" class="form">
+    <section class="top grid">
+        
+            <div class="imgDiv">
+               <img src="./Images/noPhoto.png" alt="" id="image">
+              <input type="file" id="file">
+              <label for="file" id="imgBtn">Trocar Foto</label>
+              
+            </div>
+    
+            <div class="name">
+                <h4 class="introTxt">Informações Pessoais</h4>
+                <div>
+                    <label for="cargo">Informações Profissionais</label>
+                <input class="input" type="text" id="cargo" placeholder="Insira seu cargo">
+                </div>
+                <div>
+                    <label for="empresa">Informações Profissionais</label>
+                <input class="input" type="text" id="empresa" placeholder="Insira a empresa que trabalha">
+                </div>
+                <div class="date">
+                    <div>
+                        <label for="nasc">Data de nascimento</label>
+                    <input class="input" type="date" id="nasc">
+                    </div>
+            </div>
+                
+            </div>
+        <div class="contact">
+            <h4 class="introTxt">Outras Informações</h4>
+            <div>
+                <i class="bx bx-phone icon"></i>
+                <input class="input" type="text" id="telefone" placeholder="Insira seu Telefone">
+            </div>
+            <div>
+                <i class="bx bx-mail-send icon"></i>
+                <input class="input" type="email" id="email" placeholder="insira seu email" required="">
+            </div>
+            <div>
+                <i class="bx bx-globe icon"></i>
+                <input class="input" type="text" id="redes" placeholder="Instagram, Facebook" required="">
+            </div>
+        </div>
+       
+    </section>
+
+<!-- Education division -------------------------------- -->
+        <div class="educDetails">
+            <div class="gridCol">
+                <div class="bio">
+                    <label for="bio">Sobre mim</label>
+                    <input class="input" type="text" id="bio" placeholder="Escreva sobre você">
+                </div>
+                <div class="schoolName">
+                    <label for="formacao">Formação</label>
+                    <input class="input" type="text" id="formacao" placeholder="Seu grau de formação e onde estudou">
+                </div>
+            </div>
+        <br>
+
+        <div class="skillsGridCol">
+            <div class="flex">
+               <div class="skills">
+                   <label for="habilidade">Habilidades</label>
+                   <div>
+                    <input class="input" type="text" id="habilidade" placeholder="Insira algumas habilidades">
+                    </div>
+                </div>
+                <div class="hobbies">
+                    <label for="interesses">Interesses</label>
+                   <div>
+                    <input class="input" type="text" id="interesses" placeholder="Conte mais sobre seus hobbies e interesses">
+                    </div>
+               </div> 
+            </div>
+            <div class="endereco">
+                <div class="Estado">
+                    <label for="estado">Estado</label>
+                   <div>
+                    <select name="estado" id="estado">
+                        <option selected disabled>Escolha o estado que você reside</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                    </div>
+               </div>
+               <div class="Cidade">
+                    <label for="cidade">Cidade</label>
+                    <div>
+                    <input class="input" type="text" id="cidade" placeholder="Digite aqui a sua cidade">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+<br>
+    <div class="mainBtn">
+        <button type="submit" id="previewBtn">Salvar informações</button>
+    </div>
+    <form>
+</div>
+<div class="footer">
+    <small>Designed and Developed by SocialMesh</small>
+</div>
+
+</div>
+
+<script src="cadperfil.js"></script>
+
+
+</body></html>

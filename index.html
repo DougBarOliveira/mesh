@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="folha1" rel="stylesheet" href="stylec.css">
+    <link id="folha2" rel="stylesheet" href="stylee.css" disabled>
+    <link rel="shortcut icon" href="Mesh.ico" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main_login">
+        <div class="left_login">
+            <h1>Faça login<br>para fazer parte da melhor rede social corporativa</h1>
+            <img src="Mesh.png" alt="trabalho">
+            <button type="button" onclick="alternarEstilo()">☀/☾</button>
+        </div>
+        <div class="right_login">
+            <div class="card_login">
+                <h1>LOGIN</h1>
+                <form id="form" class="form" onsubmit="return usernameValue()">
+                    <div class="textfield">
+                        <label for="usuario">E-mail:</label>
+                        <input id="user" type="email" name="usuario" placeholder="Digite o seu usuário">
+                        <a>Mensagem</a>
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha:</label>
+                        <input id="pass" type="password" name="senha" placeholder="Digite a sua senha">
+                        <a>Mensagem</a>
+                    </div>
+                    <button type="submit" class="btn_login">Login</button>
+                    <a href="cadastro.html">Crie a sua conta</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

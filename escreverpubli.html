@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Mesh</title>
+</head>
+<body bgcolor='MidnightBlue' text='white'>
+  <center>
+    <div class="newPost">
+      <div class="infoUser">
+        <div class="imgUser">
+          <img id="imagem" src="profile.jpg" alt="Profile Picture">
+        </div>
+        <strong id="nome">Nome</strong>
+      </div>
+      <form action="" class="formPost" id="formPost">
+        <textarea name="textarea" placeholder="Deseja compartilhar algo hoje?" id="textarea"></textarea>
+        <div class="iconsAndButton">
+          <div class="icons">
+            <div class="midia">
+              <label for="file"><img src="./assets/img.svg" alt="Adicionar midia"></label>
+              <h4></h4>
+              <input id="file" type="file" name="file">
+            </div>
+          </div>
+          <button type="submit" id="botao" class="btnSubmitForm">Publicar</button>
+        </div>
+      </form>
+    </div>
+    <ul class="posts" id="posts"></ul>
+  </center>
+  <script src="FormPost.js"></script>
+</body>
+</html>

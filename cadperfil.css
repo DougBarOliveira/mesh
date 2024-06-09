@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300;400;500&display=swap");
+
+:root {
+  --primaryColor: #346797;
+  --secondaryColor: #e6f3ff;
+  --inputColor: #d6e6e7a4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  transition: 1s ease-in-out;
+}
+
+body {
+  background: #e6f3ff;
+  color: #092844;
+  font-size: 15px;
+}
+
+.container {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    margin: 3rem 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .container {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
+.intro {
+  width: 100%;
+  margin: auto;
+  padding: 2rem 0;
+  text-align: center;
+  background: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+@media screen and (min-width: 1080px) {
+  .intro h1 {
+    font-size: 45px;
+  }
+}
+
+.intro p {
+  padding: 10px 0 0;
+  margin: auto;
+}
+
+@media screen and (min-width: 1080px) {
+  .intro p {
+    font-size: 25px;
+  }
+}
+
+.introTxt {
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+section {
+  margin-bottom: 3rem;
+  color: #0a346b;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.top .imgDiv {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 1rem auto 2rem;
+  border: 10px solid rgba(236, 236, 236, 0.808);
+}
+
+.top .imgDiv:hover #imgBtn {
+  display: block;
+}
+
+.top .imgDiv img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.top .imgDiv #file {
+  display: none;
+}
+
+.top .imgDiv #imgBtn {
+  position: absolute;
+  width: 100%;
+  background: #000000a6;
+  text-align: center;
+  padding: 0.7rem 0.7rem 0.8rem;
+  bottom: -10px;
+  left: 0;
+  color: var(--secondaryColor);
+  cursor: pointer;
+  font-size: 15px;
+  display: none;
+  transition: display 0.5s ease;
+}
+
+.top .name div {
+  margin: 10px 0;
+}
+
+input,
+textarea, select {
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  width: 100%;
+  background: var(--inputColor);
+}
+
+input, select
+textarea:focus {
+  outline: none;
+}
+
+.top .contact div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.top .contact div .icon {
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.skillsGridCol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+
+
+@media screen and (max-width: 350px) {
+  p {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .top {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.mainBtn {
+  width: 100%;
+}
+
+.mainBtn #previewBtn {
+  padding: 10px;
+  margin: auto;
+  color: var(--secondaryColor);
+  background: #346797;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.mainBtn #previewBtn:focus {
+  outline: none;
+}
+
+.mainBtn #previewBtn:hover {
+  background: #2f5499;
+}
+
+.footer {
+  margin: 2rem auto 0;
+  padding: 2rem;
+  text-align: center;
+  font-size: 20px;
+  color: var(--secondaryColor);
+  background: var(--primaryColor);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background: var(--BgColor);
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+  border-radius: 4px;
+  cursor: pointer;
+}

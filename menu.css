@@ -1,0 +1,46 @@
+body{
+    background: linear-gradient(180deg ,#133b61, #a6bacc);
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+h7{
+    text-orientation: unset;
+    text-align: end;
+    font-size: x-small;
+}    
+
+#botao {
+    height: 50px;
+    width: 150px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    }
+
+    
+#botao:hover	{
+    font-size: x-large;
+    color: white;
+    font-weight: bold;
+    }
+
+    footer {
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: x-small;
+    }
+    
+
+

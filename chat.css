@@ -1,0 +1,129 @@
+*{
+  overflow: hidden;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #1b2838; /* azul escuro */
+    color: #ffffff; /* branco */
+    margin: 0;
+    padding: 3%;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .chat-container {
+    width: 70%; /* Alteramos a largura para 80% */
+    margin: auto;
+    background-color: #e6f3ff; /* branco */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); /* sombra preta */
+    height: 90%;
+  }
+  
+  .contacts {
+    width: 30%;
+    float: left;
+    padding: 20px;
+    background-color: #346797; /* azul escuro mais claro */
+    height:100%;
+  }
+  
+  .contacts h2 {
+    margin-top: 0;
+    color: #ffffff; /* branco */
+  }
+  
+  .contacts ul {
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .contacts li {
+    padding: 10px;
+    border-bottom: 1px solid #37474f; /* azul escuro mais claro */
+    color: #ffffff; /* branco */
+    font-size: 16pt;
+    
+  }
+  
+  .contacts li:last-child {
+    border-bottom: none;
+  }
+  
+  .contacts li:hover {
+    background-color: #37474f; /* azul escuro mais claro */
+  }
+  
+  .contacts li.selected {
+    background-color: #37474f; /* azul escuro mais claro */
+  }
+  
+  .chat {
+    color: #133b61;
+    padding: 20px;
+    overflow-y: auto;
+    height: 80%;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .sent {
+    background-color: #0084ff; /* azul */
+    color: #ffffff; /* branco */
+    align-self: -end;
+  }
+  
+  .received {
+    background-color: #f0f0f0; /* cinza claro */
+    color: #333333; /* preto */
+    align-self: flex-start;
+  }
+  
+  .message-content {
+    word-wrap: break-word;
+  }
+  
+  input[type="text"], button {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #37474f; /* azul escuro mais claro */
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+
+.area{
+  display: flex;
+  justify-content: center;
+}
+
+  input[type="text"]{
+    background-color: #ffffff;
+    width: 680px;
+  }
+  
+  
+  button {
+    background-color: #346797; /* azul */
+    color: #ffffff; /* branco */
+    border: none;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* azul mais escuro */
+  }
+
+  @media only screen and (max-width: 720px){
+    .chat-container{
+        height: 700px;
+    }
+}
+  
